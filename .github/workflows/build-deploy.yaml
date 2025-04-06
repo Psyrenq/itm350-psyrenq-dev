@@ -6,6 +6,7 @@ on:
       - closed
 env:
   REPO_NAME: psyrenq/itm350-river-bb
+
  
 jobs:
   if_merged:
