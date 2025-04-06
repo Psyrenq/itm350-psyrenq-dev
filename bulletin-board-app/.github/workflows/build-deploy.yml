@@ -5,7 +5,7 @@ on:
     types:
       - closed
 env:
-  REPO_NAME: {username}/itm350-{username}-bb
+  REPO_NAME: psyrenq/itm350-river-bb
 
 jobs:
   if_merged:
