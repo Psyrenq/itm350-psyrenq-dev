@@ -2,6 +2,8 @@ on:
   pull_request:
     branches: 
       - init
+    types:
+      - closed
    
 env:
   REPO_NAME: psyrenq/itm350-river-bb
