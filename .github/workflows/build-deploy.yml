@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches: 
-      - build-automation
+      - init
    
 env:
   REPO_NAME: pysrenq/itm350-river-bb
