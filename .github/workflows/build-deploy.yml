@@ -2,8 +2,7 @@ on:
   pull_request:
     branches: 
       - build-automation
-    types:
-      - closed
+   
 env:
   REPO_NAME: pysrenq/itm350-river-bb
 
