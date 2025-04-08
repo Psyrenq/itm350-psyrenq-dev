@@ -1,0 +1,21 @@
+name: Build Pipeline
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+jobs:
+  build:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Build Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./bulletin-board-app
+          file: ./bulletin-board-app/Dockerfile
+          push: true
+          tags: your-image-name:latest
